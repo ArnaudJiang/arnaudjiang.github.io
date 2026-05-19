@@ -4,6 +4,9 @@ title: "Plasma & Fusion"
 date: 2026-05-19 09:00:00 +0800
 categories: plasma fusion physics
 permalink: /plasma-fusion/
+series: plasma-fusion
+series_layer: hub
+series_order: 0
 lang: en
 alternate_lang: zh
 alternate_url: /zh/plasma-fusion/
@@ -59,126 +62,41 @@ layout: post
 title: "Plasma Is Not Just Ionized Gas"
 date: 2026-05-20 09:00:00 +0800
 categories: plasma fusion conceptual
+series: plasma-fusion
+series_layer: conceptual
+series_order: 2
 permalink: /plasma-fusion/plasma-is-not-gas/
 ---
 ```
 
-## I. Conceptual Layer: What Is Plasma?
+## Series Map
 
-This layer builds an intuition map for the first half of Chen's book. The main question is:
+{% for layer in site.data.plasma_fusion.layers %}
+### {{ layer.title_en }}
 
-> Why is plasma not just ordinary ionized gas?
+{{ layer.description_en }}
 
-The goal is to understand why collective behavior matters, why magnetic fields can constrain charged particles, and why confinement is never as clean as the first picture suggests.
-
-Planned posts:
-
-1. **Plasma Is Not Just Ionized Gas**  
-   Debye shielding, quasineutrality, and collective behavior.
-
-2. **Magnetic Fields Do Not Trap Particles Like Walls**  
-   Larmor motion, guiding centers, and why magnetic fields mostly restrict transverse motion.
-
-3. **The First Leak: Drifts**  
-   E x B drift, grad-B drift, curvature drift, and why magnetic confinement is hard.
-
-4. **From Particles to Fluids**  
-   Why plasma can sometimes be treated as a fluid, and where that approximation begins to break.
-
-5. **Waves Are the Language of Plasma**  
-   Plasma oscillations, Alfven waves, cutoff, resonance, and wave-particle intuition.
-
-Target reader: someone who does not know plasma physics yet, but wants to know why it is worth learning.
-
-## II. Modeling Layer: How Do We Describe Plasma?
-
-This layer moves from intuition to the model stack. The main question is:
-
-> What does each plasma model preserve, and what does it throw away?
-
-The point is not to derive every equation from first principles. The point is to understand why different descriptions exist, when each one is useful, and what kinds of questions each model can or cannot answer.
-
-The model stack looks roughly like this:
-
-```text
-Single-particle model
-↓
-Fluid model
-↓
-MHD model
-↓
-Kinetic model
-↓
-Nonlinear effects, turbulence, and simulation
-```
-
-Planned posts:
-
-1. **The Plasma Modeling Stack**  
-   A map of particle, fluid, MHD, kinetic, and PIC descriptions.
-
-2. **Fluid Plasma: The First Useful Approximation**  
-   Continuity, momentum, pressure, and self-consistent fields.
-
-3. **MHD: When Plasma Becomes a Conducting Fluid**  
-   Why fusion devices care so much about equilibrium and stability.
-
-4. **Diffusion and Transport: Why Confinement Is a Time-scale Problem**  
-   Classical diffusion, neoclassical diffusion, and Bohm diffusion as physical ideas.
-
-5. **Kinetic Theory: When Averages Are Not Enough**  
-   Distribution functions, Landau damping, and wave-particle interaction.
-
-6. **Nonlinearity and Turbulence: Where Simple Models Break**  
-   Instability growth, transport, and why confinement is often controlled by turbulence.
-
-Target reader: someone with some math or engineering background who wants to understand how plasma physics is modeled and computed.
-
-## III. Fusion / Stellarator Layer: How Does This Become a Device?
-
-This layer connects plasma physics to magnetic confinement fusion, especially stellarators. The main question is:
-
-> If the final goal is fusion, what job does each earlier concept actually do?
-
-The storyline is:
-
-```text
-Fusion needs high temperature
-↓
-High temperature means plasma
-↓
-Plasma must be confined
-↓
-Magnetic fields can confine charged particles
-↓
-Toroidal magnetic fields create drifts
-↓
-Drifts cause losses
-↓
-Stellarators use 3D magnetic geometry to control those losses
-```
-
-Planned posts:
-
-1. **Why Fusion Is a Confinement Problem**  
-   Temperature, density, and energy confinement time before device details.
-
-2. **Magnetic Confinement: The Promise and the Trap**  
-   Why magnetic fields help, and why toroidal geometry creates drift losses.
-
-3. **Tokamak vs Stellarator: Two Ways to Twist Magnetic Fields**  
-   Not a catalog comparison, but a question of how to make field lines behave.
-
-4. **Why Stellarators Are Geometry Machines**  
-   Rotational transform, magnetic surfaces, 3D coils, and quasisymmetry.
-
-5. **The Stellarator Transport Problem**  
-   Drifts, magnetic mirrors, adiabatic invariants, and neoclassical transport.
-
-6. **From Plasma Physics to Fusion Engineering**  
-   Heating, diagnostics, materials, control, simulation, and AI interfaces.
-
-Target reader: someone who wants to move from plasma basics toward magnetic confinement fusion and stellarator design.
+<ul>
+{% for item in layer.items %}
+  <li>
+    <strong>
+      {% if item.status == "Published" and item.url_en %}
+        <a href="{{ item.url_en | relative_url }}">{{ item.title_en }}</a>
+      {% else %}
+        {{ item.title_en }}
+      {% endif %}
+    </strong><br>
+    {{ item.description_en }}<br>
+    <small>
+      {% if item.status == "Published" and item.url_en %}
+        <a href="{{ item.url_en | relative_url }}">English</a>{% if item.url_zh %} | <a href="{{ item.url_zh | relative_url }}">中文</a>{% endif %} ·
+      {% endif %}
+      Status: {{ item.status }}
+    </small>
+  </li>
+{% endfor %}
+</ul>
+{% endfor %}
 
 ## How I Plan To Write
 

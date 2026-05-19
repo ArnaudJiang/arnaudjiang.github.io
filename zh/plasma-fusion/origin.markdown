@@ -5,6 +5,9 @@ permalink: /zh/plasma-fusion/origin/
 lang: zh
 alternate_lang: en
 alternate_url: /plasma-fusion/origin/
+series: plasma-fusion
+series_layer: origin
+series_order: 1
 description: "一篇关于我为什么研究等离子体物理、聚变、仿真与仿星器设计的个人研究笔记。"
 ---
 

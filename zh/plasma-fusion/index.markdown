@@ -5,6 +5,9 @@ permalink: /zh/plasma-fusion/
 lang: zh
 alternate_lang: en
 alternate_url: /plasma-fusion/
+series: plasma-fusion
+series_layer: hub
+series_order: 0
 description: "从带电物质的集体行为出发，经由计算模型，走向磁约束聚变与仿星器设计。"
 ---
 
@@ -56,126 +59,41 @@ layout: post
 title: "Plasma Is Not Just Ionized Gas"
 date: 2026-05-20 09:00:00 +0800
 categories: plasma fusion conceptual
+series: plasma-fusion
+series_layer: conceptual
+series_order: 2
 permalink: /plasma-fusion/plasma-is-not-gas/
 ---
 ```
 
-## I. Conceptual Layer：等离子体到底是什么？
+## Series Map
 
-这一层为 Chen 书的前半部分建立一张直觉地图。核心问题是：
+{% for layer in site.data.plasma_fusion.layers %}
+### {{ layer.title_zh }}
 
-> 为什么 plasma 不只是普通的电离气体？
+{{ layer.description_zh }}
 
-目标是理解为什么集体行为重要，为什么磁场能够约束带电粒子，以及为什么这种约束从一开始就没有想象中那么干净。
-
-计划文章：
-
-1. **Plasma Is Not Just Ionized Gas**  
-   Debye shielding、准中性和集体行为。
-
-2. **Magnetic Fields Do Not Trap Particles Like Walls**  
-   Larmor motion、guiding center，以及为什么磁场主要限制横向运动。
-
-3. **The First Leak: Drifts**  
-   E x B drift、grad-B drift、curvature drift，以及为什么磁约束很难。
-
-4. **From Particles to Fluids**  
-   为什么 plasma 有时可以被当作流体，以及这个近似从哪里开始失效。
-
-5. **Waves Are the Language of Plasma**  
-   plasma oscillation、Alfven wave、cutoff、resonance 和波粒相互作用直觉。
-
-目标读者：还不了解等离子体物理，但想知道它为什么值得学习的人。
-
-## II. Modeling Layer：我们如何描述等离子体？
-
-这一层从直觉进入模型栈。核心问题是：
-
-> 每一种 plasma 模型保留了什么，又丢掉了什么？
-
-重点不是从第一性原理推导所有方程，而是理解为什么会有不同描述、每种描述什么时候有用，以及它们能回答和不能回答什么问题。
-
-模型栈大致如下：
-
-```text
-Single-particle model
-↓
-Fluid model
-↓
-MHD model
-↓
-Kinetic model
-↓
-Nonlinear effects, turbulence, and simulation
-```
-
-计划文章：
-
-1. **The Plasma Modeling Stack**  
-   particle、fluid、MHD、kinetic 和 PIC 描述的地图。
-
-2. **Fluid Plasma: The First Useful Approximation**  
-   continuity、momentum、pressure 和自洽场。
-
-3. **MHD: When Plasma Becomes a Conducting Fluid**  
-   为什么聚变装置如此关心平衡和稳定性。
-
-4. **Diffusion and Transport: Why Confinement Is a Time-scale Problem**  
-   classical diffusion、neoclassical diffusion 和 Bohm diffusion 的物理图像。
-
-5. **Kinetic Theory: When Averages Are Not Enough**  
-   分布函数、Landau damping 和波粒相互作用。
-
-6. **Nonlinearity and Turbulence: Where Simple Models Break**  
-   不稳定性增长、输运，以及为什么约束常常由湍流控制。
-
-目标读者：有一定数学或工程背景，想理解等离子体物理如何建模和计算的人。
-
-## III. Fusion / Stellarator Layer：这些知识如何变成装置？
-
-这一层把等离子体物理连接到磁约束聚变，尤其是仿星器。核心问题是：
-
-> 如果最终目标是聚变，前面的每个概念到底在服务什么？
-
-主线是：
-
-```text
-Fusion needs high temperature
-↓
-High temperature means plasma
-↓
-Plasma must be confined
-↓
-Magnetic fields can confine charged particles
-↓
-Toroidal magnetic fields create drifts
-↓
-Drifts cause losses
-↓
-Stellarators use 3D magnetic geometry to control those losses
-```
-
-计划文章：
-
-1. **Why Fusion Is a Confinement Problem**  
-   先讲温度、密度和能量约束时间，再进入装置细节。
-
-2. **Magnetic Confinement: The Promise and the Trap**  
-   为什么磁场有用，以及为什么环形几何会产生漂移损失。
-
-3. **Tokamak vs Stellarator: Two Ways to Twist Magnetic Fields**  
-   不做百科式对比，而是围绕“如何让磁力线表现得足够好”来讲。
-
-4. **Why Stellarators Are Geometry Machines**  
-   rotational transform、magnetic surfaces、3D coils 和 quasisymmetry。
-
-5. **The Stellarator Transport Problem**  
-   drift、magnetic mirror、adiabatic invariant 和 neoclassical transport。
-
-6. **From Plasma Physics to Fusion Engineering**  
-   heating、diagnostics、materials、control、simulation 和 AI 的接口。
-
-目标读者：想从等离子体基础走向磁约束聚变，尤其是仿星器设计的人。
+<ul>
+{% for item in layer.items %}
+  <li>
+    <strong>
+      {% if item.status == "Published" and item.url_zh %}
+        <a href="{{ item.url_zh | relative_url }}">{{ item.title_zh }}</a>
+      {% else %}
+        {{ item.title_zh }}
+      {% endif %}
+    </strong><br>
+    {{ item.description_zh }}<br>
+    <small>
+      {% if item.status == "Published" and item.url_zh %}
+        <a href="{{ item.url_zh | relative_url }}">中文</a>{% if item.url_en %} | <a href="{{ item.url_en | relative_url }}">English</a>{% endif %} ·
+      {% endif %}
+      状态：{{ item.status_zh }}
+    </small>
+  </li>
+{% endfor %}
+</ul>
+{% endfor %}
 
 ## 我打算怎么写
 

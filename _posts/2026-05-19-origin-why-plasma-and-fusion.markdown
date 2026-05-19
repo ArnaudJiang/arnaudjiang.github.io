@@ -4,6 +4,8 @@ title: "Origin: Why Plasma & Fusion"
 date: 2026-05-19 09:10:00 +0800
 categories: plasma fusion origin
 series: plasma-fusion
+series_layer: origin
+series_order: 1
 lang: en
 alternate_lang: zh
 alternate_url: /zh/plasma-fusion/origin/
