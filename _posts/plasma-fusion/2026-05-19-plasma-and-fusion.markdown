@@ -9,14 +9,14 @@ series_layer: origin
 series_order: 0
 lang: en
 alternate_lang: zh
-alternate_url: /zh/plasma-fusion/
+alternate_url: /zh/plasma-fusion/overview/
 description: "A layered reconstruction of plasma physics: from collective charged matter, to computational models, to magnetic fusion and stellarator design."
 excerpt: "This is the starting point for my notes on plasma physics and nuclear fusion."
 ---
 
 This is the starting point for my notes on plasma physics and nuclear fusion.
 
-<p><strong>Language:</strong> English | <a href="{{ "/zh/plasma-fusion/" | relative_url }}">中文</a></p>
+<p><strong>Language:</strong> English | <a href="{{ "/zh/plasma-fusion/overview/" | relative_url }}">中文</a></p>
 
 [Back to Plasma & Fusion series]({{ "/plasma-fusion/" | relative_url }})
 

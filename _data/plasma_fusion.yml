@@ -12,7 +12,7 @@ layers:
         status: "Published"
         status_zh: "已发布"
         url_en: "/plasma-fusion/overview/"
-        url_zh: "/zh/plasma-fusion/"
+        url_zh: "/zh/plasma-fusion/overview/"
       - title_en: "Origin: Why Plasma & Fusion"
         title_zh: "Origin：为什么关注 Plasma & Fusion"
         description_en: "A problem frame for energy, mobility, computation, and plasma control."
