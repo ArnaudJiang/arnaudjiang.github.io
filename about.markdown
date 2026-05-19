@@ -4,6 +4,16 @@ title: About
 permalink: /about/
 ---
 
+<p>
+  <img
+    src="https://avatars.githubusercontent.com/u/139556378?v=4"
+    alt="Arnaud Jiang"
+    width="128"
+    height="128"
+    style="border-radius: 50%; display: block; margin: 0 0 1.5rem 0;"
+  >
+</p>
+
 Hi, I am Arnaud Jiang.
 
 I studied physics at Sun Yat-sen University. This blog is where I keep track of what I am learning, building, and trying to understand more deeply.
