@@ -19,3 +19,21 @@ layout: landing
 
 - [Plasma & Fusion]({{ "/plasma-fusion/" | relative_url }}) / [中文]({{ "/zh/plasma-fusion/" | relative_url }})  
   A layered reconstruction of plasma physics: from collective charged matter, to computational models, to magnetic fusion and stellarator design.
+
+## Latest Posts
+
+<ul class="post-list">
+  {% for post in site.posts %}
+    <li>
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <h3>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </h3>
+      {% if post.excerpt %}
+        <p>{{ post.excerpt | strip_html | normalize_whitespace | truncate: 220 }}</p>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>

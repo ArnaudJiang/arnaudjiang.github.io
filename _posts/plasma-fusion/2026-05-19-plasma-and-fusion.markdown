@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Plasma & Fusion"
+title: "Plasma & Fusion: Overview"
 date: 2026-05-19 09:00:00 +0800
 categories: plasma fusion physics
-permalink: /plasma-fusion/
+permalink: /plasma-fusion/overview/
 series: plasma-fusion
-series_layer: hub
+series_layer: origin
 series_order: 0
 lang: en
 alternate_lang: zh
@@ -17,6 +17,8 @@ excerpt: "This is the starting point for my notes on plasma physics and nuclear 
 This is the starting point for my notes on plasma physics and nuclear fusion.
 
 <p><strong>Language:</strong> English | <a href="{{ "/zh/plasma-fusion/" | relative_url }}">中文</a></p>
+
+[Back to Plasma & Fusion series]({{ "/plasma-fusion/" | relative_url }})
 
 I studied physics, but I am approaching this topic again from a new position: with more engineering experience, more exposure to AI systems, and a stronger interest in simulation, computation, and applied scientific infrastructure. Plasma and fusion sit at an unusual intersection of theory, experiment, control, materials, numerical methods, and large-scale engineering. That makes the field difficult, but also unusually rich.
 
@@ -54,7 +56,7 @@ Future posts in this series will stay under the same URL prefix:
 /plasma-fusion/stellarator-geometry/
 ```
 
-The source files will remain ordinary Markdown posts in `_posts/`. Each post only needs a stable `permalink`:
+The source files will remain ordinary Markdown posts in `_posts/plasma-fusion/`. Each post only needs a stable `permalink`:
 
 ```markdown
 ---
@@ -69,39 +71,10 @@ permalink: /plasma-fusion/plasma-is-not-gas/
 ---
 ```
 
-## Series Map
-
-{% for layer in site.data.plasma_fusion.layers %}
-### {{ layer.title_en }}
-
-{{ layer.description_en }}
-
-<ul>
-{% for item in layer.items %}
-  <li>
-    <strong>
-      {% if item.status == "Published" and item.url_en %}
-        <a href="{{ item.url_en | relative_url }}">{{ item.title_en }}</a>
-      {% else %}
-        {{ item.title_en }}
-      {% endif %}
-    </strong><br>
-    {{ item.description_en }}<br>
-    <small>
-      {% if item.status == "Published" and item.url_en %}
-        <a href="{{ item.url_en | relative_url }}">English</a>{% if item.url_zh %} | <a href="{{ item.url_zh | relative_url }}">中文</a>{% endif %} ·
-      {% endif %}
-      Status: {{ item.status }}
-    </small>
-  </li>
-{% endfor %}
-</ul>
-{% endfor %}
-
 ## How I Plan To Write
 
 These posts will not be polished lecture notes at the beginning. I expect them to look more like working notes: definitions, diagrams, derivations, implementation experiments, paper summaries, and occasional corrections to my own earlier understanding.
 
 I want the writing to stay close to the process of learning. Some posts may explain a single equation. Others may review a paper, reproduce a simple simulation, or compare different confinement approaches. Over time, I hope this becomes a small map of the field from the perspective of someone moving between physics, AI, and software engineering.
 
-This page is the map. The actual work begins with the fundamentals.
+The [series page]({{ "/plasma-fusion/" | relative_url }}) is the map. The actual work begins with the fundamentals.

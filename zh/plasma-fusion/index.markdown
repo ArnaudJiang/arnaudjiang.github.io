@@ -11,7 +11,7 @@ series_order: 0
 description: "从带电物质的集体行为出发，经由计算模型，走向磁约束聚变与仿星器设计。"
 ---
 
-这是我关于等离子体物理与核聚变笔记的起点。
+这是我关于等离子体物理与核聚变笔记的顶层地图。
 
 <p><strong>语言：</strong><a href="{{ "/plasma-fusion/" | relative_url }}">English</a> | 中文</p>
 
@@ -21,11 +21,14 @@ description: "从带电物质的集体行为出发，经由计算模型，走向
 
 > 从带电物质的集体行为出发，经由计算模型，走向磁约束聚变与仿星器设计。
 
+## 从这里开始
+
+- [Plasma & Fusion：概览]({{ "/zh/plasma-fusion/" | relative_url }}) / [English]({{ "/plasma-fusion/overview/" | relative_url }})  
+  这个研究系列的第一篇发布笔记。
+- [Origin：为什么关注 Plasma & Fusion]({{ "/zh/plasma-fusion/origin/" | relative_url }}) / [English]({{ "/plasma-fusion/origin/" | relative_url }})  
+  一份关于能源、移动性、计算和等离子体控制的研究动机声明。
+
 ## Origin：为什么关注 Plasma & Fusion
-
-这篇文章不是教程开篇，而是一份研究动机声明。
-
-[阅读独立的 Origin 笔记。]({{ "/zh/plasma-fusion/origin/" | relative_url }}) / [English]({{ "/plasma-fusion/origin/" | relative_url }})
 
 我想理解：为什么等离子体是如此难以控制的对象；为什么聚变会把这种困难放大成行星尺度的工程问题；以及计算、仿真和 AI 如何在不遮蔽底层物理的前提下参与其中。
 
@@ -51,7 +54,7 @@ description: "从带电物质的集体行为出发，经由计算模型，走向
 /plasma-fusion/stellarator-geometry/
 ```
 
-源文件仍然是 `_posts/` 中的普通 Markdown 文章。每篇文章只需要设置稳定的 `permalink`：
+英文源文件仍然是 `_posts/plasma-fusion/` 中的普通 Markdown 文章。每篇文章只需要设置稳定的 `permalink`：
 
 ```markdown
 ---
