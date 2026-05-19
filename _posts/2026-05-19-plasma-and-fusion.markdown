@@ -4,9 +4,16 @@ title: "Plasma & Fusion"
 date: 2026-05-19 09:00:00 +0800
 categories: plasma fusion physics
 permalink: /plasma-fusion/
+lang: en
+alternate_lang: zh
+alternate_url: /zh/plasma-fusion/
+description: "A layered reconstruction of plasma physics: from collective charged matter, to computational models, to magnetic fusion and stellarator design."
+excerpt: "This is the starting point for my notes on plasma physics and nuclear fusion."
 ---
 
 This is the starting point for my notes on plasma physics and nuclear fusion.
+
+<p><strong>Language:</strong> English | <a href="{{ "/zh/plasma-fusion/" | relative_url }}">中文</a></p>
 
 I studied physics, but I am approaching this topic again from a new position: with more engineering experience, more exposure to AI systems, and a stronger interest in simulation, computation, and applied scientific infrastructure. Plasma and fusion sit at an unusual intersection of theory, experiment, control, materials, numerical methods, and large-scale engineering. That makes the field difficult, but also unusually rich.
 
