@@ -25,7 +25,7 @@ This series will be a public notebook for rebuilding my understanding step by st
 
 This entry is not meant to be a tutorial opening. It is a research motivation statement.
 
-[Read the standalone Origin note.]({{ "/plasma-fusion/origin/" | relative_url }})
+[Read the standalone Origin note.]({{ "/plasma-fusion/origin/" | relative_url }}) / [中文]({{ "/zh/plasma-fusion/origin/" | relative_url }})
 
 I want to understand why plasma is such a difficult object to control, why fusion turns that difficulty into an engineering problem at planetary scale, and how computation, simulation, and AI may help without hiding the underlying physics.
 

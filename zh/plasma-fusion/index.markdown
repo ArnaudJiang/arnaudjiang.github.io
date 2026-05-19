@@ -22,6 +22,8 @@ description: "从带电物质的集体行为出发，经由计算模型，走向
 
 这篇文章不是教程开篇，而是一份研究动机声明。
 
+[阅读独立的 Origin 笔记。]({{ "/zh/plasma-fusion/origin/" | relative_url }}) / [English]({{ "/plasma-fusion/origin/" | relative_url }})
+
 我想理解：为什么等离子体是如此难以控制的对象；为什么聚变会把这种困难放大成行星尺度的工程问题；以及计算、仿真和 AI 如何在不遮蔽底层物理的前提下参与其中。
 
 这个系列会以 Francis F. Chen 的 *Introduction to Plasma Physics and Controlled Fusion* 作为主要参考之一，但它不会写成逐章读书笔记。我更希望它成为一张知识地图：从物理直觉，到建模选择，再到磁约束聚变与仿星器思维。
