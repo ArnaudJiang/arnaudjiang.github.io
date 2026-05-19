@@ -14,3 +14,8 @@ layout: home
     style="display: block; width: min(100%, 220px); height: auto; border-radius: 8px;"
   >
 </figure>
+
+## Research Series
+
+- [Plasma & Fusion]({{ "/plasma-fusion/" | relative_url }})  
+  A layered reconstruction of plasma physics: from collective charged matter, to computational models, to magnetic fusion and stellarator design.
