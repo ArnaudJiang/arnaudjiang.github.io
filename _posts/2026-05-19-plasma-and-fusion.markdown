@@ -25,6 +25,8 @@ This series will be a public notebook for rebuilding my understanding step by st
 
 This entry is not meant to be a tutorial opening. It is a research motivation statement.
 
+[Read the standalone Origin note.]({{ "/plasma-fusion/origin/" | relative_url }})
+
 I want to understand why plasma is such a difficult object to control, why fusion turns that difficulty into an engineering problem at planetary scale, and how computation, simulation, and AI may help without hiding the underlying physics.
 
 The series will use Francis F. Chen's *Introduction to Plasma Physics and Controlled Fusion* as one of the main references, but it will not be organized as chapter-by-chapter reading notes. I want it to become a knowledge map that moves from physics intuition, to modeling choices, to magnetic fusion and stellarator thinking.
