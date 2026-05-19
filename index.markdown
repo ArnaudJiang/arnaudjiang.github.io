@@ -5,12 +5,12 @@
 layout: home
 ---
 
-<figure style="margin: 0 0 2rem 0;">
+<figure style="margin: 0 0 1.5rem 0;">
   <img
-    src="{{ "/assets/images/home-portrait.png" | relative_url }}"
+    src="{{ "/assets/images/home-portrait.jpg" | relative_url }}"
     alt="Arnaud Jiang in a playground"
-    width="1254"
-    height="1254"
-    style="display: block; width: min(100%, 720px); height: auto; border-radius: 8px;"
+    width="480"
+    height="480"
+    style="display: block; width: min(100%, 220px); height: auto; border-radius: 8px;"
   >
 </figure>
