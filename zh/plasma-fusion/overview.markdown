@@ -44,30 +44,6 @@ description: "从带电物质的集体行为出发，经由计算模型，走向
 | Modeling | 建立模型栈 | 近似、取舍、方程含义 | 中 |
 | Fusion / Stellarator | 连接物理与装置 | 从物理到装置再到工程 | 中低 |
 
-后续文章会统一放在同一个 URL 前缀下：
-
-```text
-/plasma-fusion/plasma-is-not-gas/
-/plasma-fusion/magnetic-fields/
-/plasma-fusion/modeling-stack/
-/plasma-fusion/stellarator-geometry/
-```
-
-英文源文件仍然是 `_posts/plasma-fusion/` 中的普通 Markdown 文章。每篇文章只需要设置稳定的 `permalink`：
-
-```markdown
----
-layout: post
-title: "Plasma Is Not Just Ionized Gas"
-date: 2026-05-20 09:00:00 +0800
-categories: plasma fusion conceptual
-series: plasma-fusion
-series_layer: conceptual
-series_order: 2
-permalink: /plasma-fusion/plasma-is-not-gas/
----
-```
-
 ## 我打算怎么写
 
 这些文章一开始不会是完全打磨好的讲义。它们更像工作笔记：定义、图示、推导、实现实验、论文总结，以及对自己早期理解的修正。

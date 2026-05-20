@@ -47,30 +47,6 @@ The series has three layers. They are not simply "easy, medium, hard." They are 
 | Modeling | Build the model stack | Approximation, tradeoff, equation meaning | Medium |
 | Fusion / Stellarator | Connect physics to devices | Physics to device to engineering | Medium-low |
 
-Future posts in this series will stay under the same URL prefix:
-
-```text
-/plasma-fusion/plasma-is-not-gas/
-/plasma-fusion/magnetic-fields/
-/plasma-fusion/modeling-stack/
-/plasma-fusion/stellarator-geometry/
-```
-
-The source files will remain ordinary Markdown posts in `_posts/plasma-fusion/`. Each post only needs a stable `permalink`:
-
-```markdown
----
-layout: post
-title: "Plasma Is Not Just Ionized Gas"
-date: 2026-05-20 09:00:00 +0800
-categories: plasma fusion conceptual
-series: plasma-fusion
-series_layer: conceptual
-series_order: 2
-permalink: /plasma-fusion/plasma-is-not-gas/
----
-```
-
 ## How I Plan To Write
 
 These posts will not be polished lecture notes at the beginning. I expect them to look more like working notes: definitions, diagrams, derivations, implementation experiments, paper summaries, and occasional corrections to my own earlier understanding.
