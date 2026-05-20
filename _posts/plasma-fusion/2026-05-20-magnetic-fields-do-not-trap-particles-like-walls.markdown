@@ -45,9 +45,9 @@ To understand this, we have to start not with a plasma as a whole, but with a si
 
 The basic force on a charged particle is the Lorentz force:
 
-[
+$$
 m\frac{d\mathbf v}{dt}=q(\mathbf E+\mathbf v\times \mathbf B)
-]
+$$
 
 If there is no electric field, only a magnetic field, the force is always perpendicular to the particle’s velocity. This means the magnetic field does no work on the particle. It does not directly increase or decrease the particle’s kinetic energy. It only changes the direction of motion.
 
@@ -55,17 +55,17 @@ That one fact already breaks the wall analogy.
 
 A wall can stop a particle because it can exchange momentum and energy with it. A static magnetic field cannot stop a charged particle in that way. It can only curve its path.
 
-If the magnetic field is uniform and points in the (z)-direction, the particle’s velocity can be split into two parts:
+If the magnetic field is uniform and points in the $z$-direction, the particle’s velocity can be split into two parts:
 
-[
+$$
 v_\parallel
-]
+$$
 
 along the magnetic field, and
 
-[
+$$
 v_\perp
-]
+$$
 
 perpendicular to the magnetic field.
 
@@ -85,15 +85,15 @@ A particle can be beautifully magnetized and still stream out along the field li
 
 The size of the circular orbit is called the **Larmor radius**:
 
-[
+$$
 r_L=\frac{v_\perp}{\omega_c}=\frac{mv_\perp}{|q|B}
-]
+$$
 
 where
 
-[
+$$
 \omega_c=\frac{|q|B}{m}
-]
+$$
 
 is the cyclotron frequency.
 
@@ -129,15 +129,15 @@ This is the second key idea:
 
 A particle may not cross the field directly, but its guiding center can drift across the field through several mechanisms.
 
-The simplest and most important example is the (E\times B) drift.
+The simplest and most important example is the $E\times B$ drift.
 
 When an electric field is perpendicular to a magnetic field, the guiding center drifts with velocity
 
-[
+$$
 \mathbf v_E=\frac{\mathbf E\times \mathbf B}{B^2}
-]
+$$
 
-This drift is strange at first glance because it is independent of the particle’s mass and charge. Ions and electrons drift together in the same direction. Chen derives this in the uniform (E) and (B) field case: the particle still gyrates, but the guiding center moves sideways. 
+This drift is strange at first glance because it is independent of the particle’s mass and charge. Ions and electrons drift together in the same direction. Chen derives this in the uniform $E$ and $B$ field case: the particle still gyrates, but the guiding center moves sideways. 
 
 This is not a small technical detail. It means that magnetic confinement is never just “particles circle around field lines.” Electric fields can move the entire plasma across magnetic fields.
 
@@ -149,7 +149,7 @@ It can drift.
 
 Real confinement fields are not uniform. They curve, strengthen, weaken, twist, and close on themselves.
 
-Once (B) is nonuniform, another drift appears: the **grad-B drift**.
+Once $B$ is nonuniform, another drift appears: the **grad-B drift**.
 
 If the magnetic field is stronger on one side of a particle’s orbit than the other, the Larmor radius changes across the orbit. This asymmetry shifts the guiding center. The result is a drift perpendicular to both the magnetic field and the magnetic-field gradient. Chen’s treatment shows that this drift has opposite directions for ions and electrons, creating a transverse current. 
 
@@ -177,11 +177,11 @@ There is one case where the word “trap” feels more intuitive: the magnetic m
 
 If a particle moves from a weak magnetic field into a stronger magnetic field, its perpendicular energy tends to increase while its parallel energy decreases, provided the motion is sufficiently slow and adiabatic. The underlying conserved quantity is the first adiabatic invariant, the magnetic moment:
 
-[
+$$
 \mu=\frac{mv_\perp^2}{2B}
-]
+$$
 
-As (B) increases, (v_\perp^2) must increase to keep (\mu) constant. If total energy is conserved, (v_\parallel^2) must decrease. If (v_\parallel) falls to zero, the particle reverses direction. This is the magnetic mirror effect.
+As $B$ increases, $v_\perp^2$ must increase to keep $\mu$ constant. If total energy is conserved, $v_\parallel^2$ must decrease. If $v_\parallel$ falls to zero, the particle reverses direction. This is the magnetic mirror effect.
 
 Now this does look a little like reflection.
 
@@ -217,7 +217,7 @@ After many collisions, the guiding center performs a random walk across the magn
 
 This is cross-field diffusion.
 
-Chen describes perpendicular diffusion in exactly this way: the step length for cross-field diffusion is no longer the ordinary mean free path, but roughly the Larmor radius. Increasing (B) decreases (r_L), which slows cross-field diffusion. 
+Chen describes perpendicular diffusion in exactly this way: the step length for cross-field diffusion is no longer the ordinary mean free path, but roughly the Larmor radius. Increasing $B$ decreases $r_L$, which slows cross-field diffusion. 
 
 This is one of the most important corrections to the wall picture.
 
@@ -233,14 +233,14 @@ That is why magnetic confinement is a race between heating, energy loss, particl
 
 A magnetic field creates a strong distinction between two directions:
 
-* motion parallel to (B)
-* motion perpendicular to (B)
+* motion parallel to $B$
+* motion perpendicular to $B$
 
 Parallel motion remains relatively easy. Perpendicular motion becomes organized into Larmor orbits and guiding-center drifts.
 
 This anisotropy runs through almost all plasma physics.
 
-Temperature can become anisotropic: (T_\parallel) and (T_\perp). Pressure can become anisotropic. Waves behave differently parallel and perpendicular to the magnetic field. Diffusion differs along and across the field. Instabilities often feed on these directional differences.
+Temperature can become anisotropic: $T_\parallel$ and $T_\perp$. Pressure can become anisotropic. Waves behave differently parallel and perpendicular to the magnetic field. Diffusion differs along and across the field. Instabilities often feed on these directional differences.
 
 This is why a magnetized plasma is not just a hot gas inside a magnetic container. It is a medium whose internal degrees of freedom have been reorganized by the magnetic field.
 
@@ -294,7 +294,7 @@ The plasma-physics view says:
 
 That shift is crucial.
 
-Once we understand this, the vocabulary of magnetic confinement starts to make more sense: Larmor radius, cyclotron frequency, guiding center, (E\times B) drift, grad-B drift, curvature drift, magnetic mirror, loss cone, adiabatic invariant, cross-field diffusion.
+Once we understand this, the vocabulary of magnetic confinement starts to make more sense: Larmor radius, cyclotron frequency, guiding center, $E\times B$ drift, grad-B drift, curvature drift, magnetic mirror, loss cone, adiabatic invariant, cross-field diffusion.
 
 These are not decorative concepts. They are the grammar of magnetized motion.
 

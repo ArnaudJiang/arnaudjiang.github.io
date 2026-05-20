@@ -42,9 +42,9 @@ excerpt: "Larmor 运动、导引中心，以及为什么磁场主要限制横向
 
 带电粒子受到的基本力是 Lorentz 力：
 
-[
+$$
 m\frac{d\mathbf v}{dt}=q(\mathbf E+\mathbf v\times \mathbf B)
-]
+$$
 
 如果没有电场，只有磁场，那么力总是垂直于粒子的速度。这意味着磁场不对粒子做功。它不会直接增加或减少粒子的动能。它只改变运动方向。
 
@@ -52,17 +52,17 @@ m\frac{d\mathbf v}{dt}=q(\mathbf E+\mathbf v\times \mathbf B)
 
 墙之所以能让粒子停下来，是因为它可以和粒子交换动量与能量。静态磁场不能以这种方式停止一个带电粒子。它只能弯曲粒子的轨迹。
 
-如果磁场是均匀的，并且指向 (z) 方向，粒子的速度可以分成两部分：
+如果磁场是均匀的，并且指向 $z$ 方向，粒子的速度可以分成两部分：
 
-[
+$$
 v_\parallel
-]
+$$
 
 沿磁场方向的速度，以及
 
-[
+$$
 v_\perp
-]
+$$
 
 垂直于磁场方向的速度。
 
@@ -82,15 +82,15 @@ v_\perp
 
 圆形轨道的大小叫作 **Larmor radius**：
 
-[
+$$
 r_L=\frac{v_\perp}{\omega_c}=\frac{mv_\perp}{|q|B}
-]
+$$
 
 其中
 
-[
+$$
 \omega_c=\frac{|q|B}{m}
-]
+$$
 
 是 cyclotron frequency。
 
@@ -126,15 +126,15 @@ r_L=\frac{v_\perp}{\omega_c}=\frac{mv_\perp}{|q|B}
 
 粒子也许不能直接穿过磁场，但它的导引中心可以通过多种机制跨过磁场漂移。
 
-最简单也最重要的例子是 (E\times B) drift。
+最简单也最重要的例子是 $E\times B$ drift。
 
 当电场垂直于磁场时，导引中心以如下速度漂移：
 
-[
+$$
 \mathbf v_E=\frac{\mathbf E\times \mathbf B}{B^2}
-]
+$$
 
-这个漂移乍看很奇怪，因为它与粒子的质量和电荷无关。离子和电子会沿同一个方向一起漂移。Chen 在均匀 (E) 和 (B) 场的情形下推导了这一点：粒子仍然回旋，但导引中心会横向移动。
+这个漂移乍看很奇怪，因为它与粒子的质量和电荷无关。离子和电子会沿同一个方向一起漂移。Chen 在均匀 $E$ 和 $B$ 场的情形下推导了这一点：粒子仍然回旋，但导引中心会横向移动。
 
 这不是一个小技术细节。它意味着磁约束绝不只是“粒子围绕磁力线转圈”。电场可以让整个等离子体跨过磁场移动。
 
@@ -146,7 +146,7 @@ r_L=\frac{v_\perp}{\omega_c}=\frac{mv_\perp}{|q|B}
 
 真实的约束磁场并不均匀。它们会弯曲、增强、减弱、扭转，并且闭合到自身。
 
-一旦 (B) 非均匀，另一种漂移就会出现：**grad-B drift**。
+一旦 $B$ 非均匀，另一种漂移就会出现：**grad-B drift**。
 
 如果粒子轨道一侧的磁场比另一侧更强，那么 Larmor 半径会在轨道不同位置发生变化。这种不对称会移动导引中心。结果就是一个同时垂直于磁场和磁场梯度的漂移。Chen 的处理表明，这种漂移对离子和电子方向相反，因此会产生横向电流。
 
@@ -174,11 +174,11 @@ Tokamak 不只是“制造一个甜甜圈形状的磁场”。Stellarator 也不
 
 如果粒子从弱磁场区域进入强磁场区域，在运动足够缓慢且近似绝热时，它的垂直能量倾向于增加，而平行能量倾向于减少。背后守恒的量是第一绝热不变量，也就是 magnetic moment：
 
-[
+$$
 \mu=\frac{mv_\perp^2}{2B}
-]
+$$
 
-当 (B) 增大时，为了保持 (\mu) 不变，(v_\perp^2) 必须增大。如果总能量守恒，(v_\parallel^2) 就必须减小。如果 (v_\parallel) 降到零，粒子就会反向运动。这就是 magnetic mirror effect。
+当 $B$ 增大时，为了保持 $\mu$ 不变，$v_\perp^2$ 必须增大。如果总能量守恒，$v_\parallel^2$ 就必须减小。如果 $v_\parallel$ 降到零，粒子就会反向运动。这就是 magnetic mirror effect。
 
 现在它看起来确实有点像反射。
 
@@ -214,7 +214,7 @@ Tokamak 不只是“制造一个甜甜圈形状的磁场”。Stellarator 也不
 
 这就是 cross-field diffusion。
 
-Chen 正是这样描述垂直扩散的：跨场扩散的步长不再是普通的平均自由程，而大约是 Larmor 半径。增大 (B) 会减小 (r_L)，从而减慢跨场扩散。
+Chen 正是这样描述垂直扩散的：跨场扩散的步长不再是普通的平均自由程，而大约是 Larmor 半径。增大 $B$ 会减小 $r_L$，从而减慢跨场扩散。
 
 这是对墙图像最重要的修正之一。
 
@@ -230,14 +230,14 @@ Chen 正是这样描述垂直扩散的：跨场扩散的步长不再是普通的
 
 磁场在两个方向之间制造了强烈区别：
 
-* 平行于 (B) 的运动
-* 垂直于 (B) 的运动
+* 平行于 $B$ 的运动
+* 垂直于 $B$ 的运动
 
 平行运动仍然相对容易。垂直运动则被组织成 Larmor 轨道和导引中心漂移。
 
 这种各向异性贯穿几乎所有等离子体物理。
 
-温度可以变得各向异性： (T_\parallel) 和 (T_\perp)。压力可以变得各向异性。波在平行和垂直于磁场的方向上表现不同。沿磁场和跨磁场的扩散不同。不稳定性常常从这些方向差异中获得能量。
+温度可以变得各向异性： $T_\parallel$ 和 $T_\perp$。压力可以变得各向异性。波在平行和垂直于磁场的方向上表现不同。沿磁场和跨磁场的扩散不同。不稳定性常常从这些方向差异中获得能量。
 
 这就是为什么磁化等离子体不只是放在磁容器里的热气体。它是一种内部自由度已经被磁场重新组织过的介质。
 
@@ -291,7 +291,7 @@ Chen 正是这样描述垂直扩散的：跨场扩散的步长不再是普通的
 
 这个转变至关重要。
 
-一旦理解了这一点，磁约束的词汇就开始变得有意义：Larmor radius、cyclotron frequency、guiding center、(E\times B) drift、grad-B drift、curvature drift、magnetic mirror、loss cone、adiabatic invariant、cross-field diffusion。
+一旦理解了这一点，磁约束的词汇就开始变得有意义：Larmor radius、cyclotron frequency、guiding center、$E\times B$ drift、grad-B drift、curvature drift、magnetic mirror、loss cone、adiabatic invariant、cross-field diffusion。
 
 这些不是装饰性的概念。它们是磁化运动的语法。
 
