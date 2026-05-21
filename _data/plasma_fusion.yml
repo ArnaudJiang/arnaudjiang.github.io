@@ -63,8 +63,10 @@ layers:
         title_zh: "波是等离子体的语言"
         description_en: "Plasma oscillations, Alfven waves, cutoff, resonance, and wave-particle intuition."
         description_zh: "plasma oscillation、Alfven wave、cutoff、resonance 和波粒相互作用直觉。"
-        status: "Planned"
-        status_zh: "计划中"
+        status: "Published"
+        status_zh: "已发布"
+        url_en: "/plasma-fusion/waves-are-language/"
+        url_zh: "/zh/plasma-fusion/waves-are-language/"
   - key: modeling
     title_en: "II. Modeling Layer"
     title_zh: "II. Modeling Layer"
