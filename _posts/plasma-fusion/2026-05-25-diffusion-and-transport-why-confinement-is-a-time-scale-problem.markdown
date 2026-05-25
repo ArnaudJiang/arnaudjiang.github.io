@@ -93,7 +93,7 @@ In an ordinary neutral gas, particles can wander in any direction after collisio
 In a magnetized plasma, charged particles gyrate around magnetic field lines. Their motion across the magnetic field is restricted. Instead of traveling freely across $B$, they orbit with Larmor radius:
 
 $$
-r_L = \frac{mv_\perp}{|q|B}
+r_L = \frac{mv_\perp}{\lvert q\rvert B}
 $$
 
 This makes cross-field diffusion much smaller than parallel diffusion.
@@ -116,7 +116,7 @@ $$
 D_\perp \sim \frac{v_{\mathrm{th}}^2}{\omega_c^2 \tau}
 $$
 
-where $\omega_c = |q|B/m$ is the cyclotron frequency and $\tau$ is the collision time.
+where $\omega_c = \lvert q\rvert B/m$ is the cyclotron frequency and $\tau$ is the collision time.
 
 The stronger the magnetic field, the smaller the Larmor radius, and the harder it is for collisions to move particles across field lines.
 

@@ -89,7 +89,7 @@ Fusion 是让一种有用的 non-equilibrium state 活下来的艺术。
 磁化 plasma 中，带电粒子绕磁力线回旋。跨磁场运动受到限制。它们不能自由横穿 $B$，而是以 Larmor radius 回旋：
 
 $$
-r_L = \frac{mv_\perp}{|q|B}
+r_L = \frac{mv_\perp}{\lvert q\rvert B}
 $$
 
 因此 cross-field diffusion 远小于 parallel diffusion。
@@ -112,7 +112,7 @@ $$
 D_\perp \sim \frac{v_{\mathrm{th}}^2}{\omega_c^2 \tau}
 $$
 
-其中 $\omega_c = |q|B/m$ 是 cyclotron frequency，$\tau$ 是 collision time。
+其中 $\omega_c = \lvert q\rvert B/m$ 是 cyclotron frequency，$\tau$ 是 collision time。
 
 磁场越强，Larmor radius 越小，碰撞就越难把粒子跨磁力线搬走。
 
