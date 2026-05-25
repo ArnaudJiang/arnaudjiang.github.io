@@ -100,16 +100,38 @@ $$
 D_\parallel \sim v_{\mathrm{th}}^2 \tau
 $$
 
-垂直磁场方向，碰撞大约每次只把 guiding center 移动一个 Larmor radius：
+垂直磁场方向，同样的碰撞会被 gyromotion 过滤。一个有用的 classical estimate 是：
+
+$$
+D_\perp
+\sim
+\frac{D_\parallel}{1+\omega_c^2\tau^2}
+$$
+
+在 strongly magnetized limit 中，
+
+$$
+\omega_c\tau \gg 1
+$$
+
+它变成：
+
+$$
+D_\perp \sim \frac{v_{\mathrm{th}}^2}{\omega_c^2 \tau}
+$$
+
+由于 $r_L \sim v_{\mathrm{th}}/\omega_c$，同一个 scaling 也可以写成：
 
 $$
 D_\perp \sim \frac{r_L^2}{\tau}
 $$
 
-利用 $r_L = v_{\perp}/\omega_c$，得到近似：
+最后这个形式应该被理解成 scaling argument，而不是说每一次碰撞都精确地把 guiding center 移动一个 Larmor radius。重点是 cross-field diffusion 被下面这个因子压低：
 
 $$
-D_\perp \sim \frac{v_{\mathrm{th}}^2}{\omega_c^2 \tau}
+\frac{D_\perp}{D_\parallel}
+\sim
+\frac{1}{\omega_c^2\tau^2}
 $$
 
 其中 $\omega_c = \lvert q\rvert B/m$ 是 cyclotron frequency，$\tau$ 是 collision time。

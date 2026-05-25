@@ -104,16 +104,38 @@ $$
 D_\parallel \sim v_{\mathrm{th}}^2 \tau
 $$
 
-Across the magnetic field, collisions only shift the guiding center by roughly a Larmor radius per collision:
+Across the magnetic field, the same collisions are filtered through gyromotion. A useful classical estimate is:
+
+$$
+D_\perp
+\sim
+\frac{D_\parallel}{1+\omega_c^2\tau^2}
+$$
+
+In the strongly magnetized limit,
+
+$$
+\omega_c\tau \gg 1
+$$
+
+this becomes:
+
+$$
+D_\perp \sim \frac{v_{\mathrm{th}}^2}{\omega_c^2 \tau}
+$$
+
+Since $r_L \sim v_{\mathrm{th}}/\omega_c$, the same scaling can be written as:
 
 $$
 D_\perp \sim \frac{r_L^2}{\tau}
 $$
 
-Using $r_L = v_{\perp}/\omega_c$, this becomes approximately:
+This last form should be read as a scaling argument, not as a literal claim that every collision steps the guiding center by exactly one Larmor radius. The point is that cross-field diffusion is suppressed by the factor:
 
 $$
-D_\perp \sim \frac{v_{\mathrm{th}}^2}{\omega_c^2 \tau}
+\frac{D_\perp}{D_\parallel}
+\sim
+\frac{1}{\omega_c^2\tau^2}
 $$
 
 where $\omega_c = \lvert q\rvert B/m$ is the cyclotron frequency and $\tau$ is the collision time.
