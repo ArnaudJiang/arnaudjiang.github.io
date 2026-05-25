@@ -53,6 +53,10 @@ This is the top-level map for my notes on plasma physics, magnetic fusion, simul
 </ul>
 {% endfor %}
 
-## Writing Workflow
+## Closing Note
 
-The source files remain ordinary Markdown posts. English posts in this series live under `_posts/plasma-fusion/`, keep stable `/plasma-fusion/.../` permalinks, and continue to appear in the blog's post feed.
+This series begins with plasma as collective charged matter and ends with fusion as a coupled design problem. The path is deliberately layered: first particles and fields, then fluid and kinetic models, then transport, turbulence, magnetic confinement, and stellarator geometry.
+
+The central lesson is that fusion is not one problem. It is a chain of approximations and constraints: physics becomes modeling, modeling becomes geometry, geometry becomes engineering, and every layer feeds back into the plasma.
+
+That is why plasma is such a demanding subject, and why it is worth studying carefully.

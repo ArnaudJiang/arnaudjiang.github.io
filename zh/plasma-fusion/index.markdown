@@ -53,6 +53,10 @@ description: "从带电物质的集体行为出发，经由计算模型，走向
 </ul>
 {% endfor %}
 
-## 写作工作流
+## 结语
 
-英文源文件放在 `_posts/plasma-fusion/`，保持 `/plasma-fusion/.../` 的稳定链接，并继续进入博客发布记录。中文内容集中放在 `zh/plasma-fusion/`。
+这个系列从 plasma 作为带电物质的集体行为开始，最后落到 fusion 作为耦合设计问题。它有意按层推进：先是粒子与场，然后是流体和 kinetic models，再到 transport、turbulence、magnetic confinement，以及 stellarator geometry。
+
+核心教训是：fusion 不是一个单独问题。它是一串近似和约束：physics 变成 modeling，modeling 变成 geometry，geometry 变成 engineering，而每一层又都会反过来影响 plasma。
+
+这就是 plasma 为什么难，也正是它值得认真学习的原因。
