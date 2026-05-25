@@ -134,7 +134,13 @@ $$
 \frac{1}{\omega_c^2\tau^2}
 $$
 
-其中 $\omega_c = \lvert q\rvert B/m$ 是 cyclotron frequency，$\tau$ 是 collision time。
+这里 $\omega_c$ 表示 cyclotron frequency，也就是粒子绕磁场回旋的角频率：
+
+$$
+\omega_c = \frac{\lvert q\rvert B}{m}
+$$
+
+$\tau$ 表示 collision time，也就是两次有效碰撞之间的典型时间。所以 $\omega_c\tau$ 大致表示：一个粒子在两次碰撞之间能完成多少次回旋。
 
 磁场越强，Larmor radius 越小，碰撞就越难把粒子跨磁力线搬走。
 

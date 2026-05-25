@@ -138,7 +138,13 @@ $$
 \frac{1}{\omega_c^2\tau^2}
 $$
 
-where $\omega_c = \lvert q\rvert B/m$ is the cyclotron frequency and $\tau$ is the collision time.
+Here $\omega_c$ is the cyclotron frequency,
+
+$$
+\omega_c = \frac{\lvert q\rvert B}{m}
+$$
+
+and $\tau$ is the collision time. The product $\omega_c\tau$ counts roughly how many gyro-orbits a particle completes between collisions.
 
 The stronger the magnetic field, the smaller the Larmor radius, and the harder it is for collisions to move particles across field lines.
 
