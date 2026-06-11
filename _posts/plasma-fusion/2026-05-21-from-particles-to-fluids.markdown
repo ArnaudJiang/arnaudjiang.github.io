@@ -6,7 +6,7 @@ categories: plasma fusion conceptual
 permalink: /plasma-fusion/particles-to-fluids/
 series: plasma-fusion
 series_layer: conceptual
-series_order: 5
+series_order: 6
 lang: en
 alternate_lang: zh
 alternate_url: /zh/plasma-fusion/particles-to-fluids/

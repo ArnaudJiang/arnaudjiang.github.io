@@ -112,6 +112,104 @@ So the first leak is not a particle smashing through the magnetic field.
 
 It is the guiding center quietly sliding sideways.
 
+### 2.4 Nonuniform electric fields: drifts have scale limits
+
+The $E\times B$ drift above assumes that the electric field is almost constant across one Larmor orbit.
+That is one of the hidden conditions behind the guiding-center approximation:
+
+$$
+r_L \ll L_E,
+$$
+
+where $L_E$ is the scale over which the electric field changes appreciably.
+
+If the electric field varies significantly over a single gyration, the particle samples different electric fields at different phases of its orbit. A guiding center can still be useful, but it is no longer determined only by the electric field at one point. The particle responds to a gyroaveraged field.
+
+The physical point is important.
+
+Drift formulas are not magic.
+They are approximations built on scale separation.
+
+If fields vary too rapidly over a Larmor radius, the particle is no longer simply gyrating in a local field and drifting slowly. Finite-Larmor-radius effects begin to matter, and the simple guiding-center picture becomes rough.
+
+This is why magnetized plasma always carries an implicit question:
+
+> How large is the structure compared with the Larmor radius?
+
+If the structure is much larger than $r_L$, guiding-center drift is good language.
+If it is comparable to $r_L$, the finite width of the particle orbit cannot be ignored.
+If it is smaller than $r_L$, the particle does not see it as a smooth background.
+
+This idea returns later in waves, kinetic theory, and turbulent transport. Short-wavelength fluctuations, cyclotron resonance, Bernstein waves, gyroaveraging, and finite-Larmor-radius corrections all remind us that gyration cannot always be erased.
+
+### 2.5 Time-varying electric fields: polarization drift
+
+The $E\times B$ drift has another often hidden assumption:
+
+the electric field must not change too quickly in time.
+
+If the perpendicular electric field $\mathbf{E}_\perp$ changes with time, the $E\times B$ velocity must change too. But particles have inertia. The guiding center cannot adjust instantaneously to the new $E\times B$ velocity without additional dynamics.
+
+That lag produces **polarization drift**.
+
+In the simplest uniform-field, slowly varying approximation, its scale is
+
+$$
+\mathbf{v}_p
+=
+\frac{m}{qB^2}
+\frac{d\mathbf{E}_\perp}{dt}.
+$$
+
+This differs from $E\times B$ drift in a crucial way: it depends on $m/q$.
+
+So polarization drift is not the same for ions and electrons. Because ions are much heavier, ion polarization drift is often more important. A time-varying electric field can therefore produce a polarization current.
+
+This deepens the drift story.
+
+A static $E\times B$ drift carries ions and electrons together and usually does not directly create current.
+A changing $E\times B$ drift requires different species to accelerate differently, so it creates a current response.
+
+This matters for waves and low-frequency plasma dynamics. Many fluctuations, turbulent motions, and edge phenomena contain time-varying electric fields. The plasma is not only carried by $\mathbf{E}\times\mathbf{B}$ motion; it also pays an inertial cost for changing that motion.
+
+Polarization drift is one place where mass has not disappeared from guiding-center theory.
+
+### 2.6 Time-varying magnetic fields: induced fields and betatron intuition
+
+If the magnetic field changes in time, another layer appears.
+
+A changing magnetic field is not just a parameter $B(t)$. Maxwell's equations tell us that a time-varying magnetic field produces a rotational electric field:
+
+$$
+\nabla\times\mathbf{E}
+=
+-\frac{\partial \mathbf{B}}{\partial t}.
+$$
+
+The particle therefore feels an induced electric field. That field can do work and change the particle energy.
+
+If the change is slow enough, the fast gyration can still be averaged away. Then an important intuition appears: when the magnetic field slowly increases, the perpendicular energy tends to increase; when the magnetic field slowly decreases, the perpendicular energy tends to fall. This is the betatron acceleration picture.
+
+The deeper structure behind it is the first adiabatic invariant:
+
+$$
+\mu = \frac{mv_\perp^2}{2B}.
+$$
+
+If $\mu$ is approximately conserved, then an increase in $B$ requires an increase in $v_\perp^2$. The magnetic field does not push along the velocity like an ordinary force, but through the induced electric field and the phase-averaged gyro-orbit, the perpendicular energy still changes.
+
+This shows that drift theory is not a collection of isolated formulas.
+
+It points toward a larger question:
+
+> After fast periodic motion is averaged away, what remains approximately conserved under slow change?
+
+That is the subject of adiabatic invariants.
+They explain magnetic mirrors, trapped particles, and why some particle orbits remain ordered for long times in complicated magnetic fields.
+
+So a discussion of drifts should not stop at $E\times B$, grad-$B$, and curvature drift.
+It also has to see how spatial variation, temporal variation, and scale separation decide when the guiding-center picture is reliable.
+
 ---
 
 ## 3. Any transverse force can create a drift

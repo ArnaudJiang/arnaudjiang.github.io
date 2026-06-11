@@ -6,7 +6,7 @@ categories: plasma fusion conceptual
 permalink: /plasma-fusion/waves-are-language/
 series: plasma-fusion
 series_layer: conceptual
-series_order: 6
+series_order: 7
 lang: en
 alternate_lang: zh
 alternate_url: /zh/plasma-fusion/waves-are-language/

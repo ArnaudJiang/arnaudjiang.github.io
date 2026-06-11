@@ -7,7 +7,7 @@ alternate_lang: en
 alternate_url: /plasma-fusion/waves-are-language/
 series: plasma-fusion
 series_layer: conceptual
-series_order: 6
+series_order: 7
 description: "plasma oscillation、Alfven wave、cutoff、resonance 和波粒相互作用直觉。"
 excerpt: "plasma oscillation、Alfven wave、cutoff、resonance 和波粒相互作用直觉。"
 ---

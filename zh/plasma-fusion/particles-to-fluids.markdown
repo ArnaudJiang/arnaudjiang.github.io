@@ -7,7 +7,7 @@ alternate_lang: en
 alternate_url: /plasma-fusion/particles-to-fluids/
 series: plasma-fusion
 series_layer: conceptual
-series_order: 5
+series_order: 6
 description: "为什么 plasma 有时可以被当作流体，以及这个近似从哪里开始失效。"
 excerpt: "为什么 plasma 有时可以被当作流体，以及这个近似从哪里开始失效。"
 ---
